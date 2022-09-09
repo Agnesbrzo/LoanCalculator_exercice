@@ -10,6 +10,14 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
+    <style>
+      .spinner-border {
+        display: none;
+      }
+      .result {
+        display: none;
+      }
+    </style>
   </head>
   <body class="bg-dark bg-gradient">
     <div class="container" style="min-height: 100vh">
@@ -54,10 +62,17 @@
                     type="submit"
                     class="form-loan__btn btn btn-dark mb-3 mt-1"
                   >
-                    Submit
+                    Calculate
                   </button>
                 </div>
               </form>
+
+              <div class="spinner-loading d-flex justify-content-center">
+                <div class="spinner-border mb-2 mt-3" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+              </div>
+
               <div class="result my-4">
                 <h5 class="result__title mb-3">Results</h5>
                 <div class="input-group mb-3">
