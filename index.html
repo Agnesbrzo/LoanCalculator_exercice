@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Loan calculator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-dark bg-gradient">
+    <div class="container" style="min-height: 100vh">
+      <div class="row">
+        <div class="col-md-6 mx-auto mt-5">
+          <div class="card text-center px-3">
+            <div class="card-body">
+              <h5 class="card-title h3 text-uppercase mt-2 mb-4">
+                Loan Calculator
+              </h5>
+              <form class="form-loan">
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1">$</span>
+                  <input
+                    type="number"
+                    class="form-loan__amount form-control"
+                    placeholder="Loan amount"
+                    aria-label="Loan amount"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon2">%</span>
+                  <input
+                    type="number"
+                    class="form-loan__interest form-control"
+                    placeholder="Interest"
+                    aria-label="Interest"
+                    aria-describedby="basic-addon2"
+                  />
+                </div>
+                <div class="input-group mb-3">
+                  <input
+                    type="number"
+                    class="form-loan__years form-control"
+                    placeholder="Years to repay"
+                    aria-label="Years to repay"
+                  />
+                </div>
+                <div class="d-grid">
+                  <button
+                    type="submit"
+                    class="form-loan__btn btn btn-dark mb-3 mt-1"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
+              <div class="result my-4">
+                <h5 class="result__title mb-3">Results</h5>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="result1"
+                    >Monthly Payment</span
+                  >
+                  <input
+                    disabled
+                    type="number"
+                    class="result__monthly form-control"
+                    aria-label="Monthly payment"
+                    aria-describedby="result1"
+                  />
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="result2"
+                    >Total payment</span
+                  >
+                  <input
+                    disabled
+                    type="number"
+                    class="result__total form-control"
+                    aria-label="Total payment"
+                    aria-describedby="result2"
+                  />
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="result3"
+                    >Total interest</span
+                  >
+                  <input
+                    disabled
+                    type="number"
+                    class="result__interest form-control"
+                    aria-label="Total interest"
+                    aria-describedby="result3"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script src="calculator.js"></script>
+  </body>
+</html>
